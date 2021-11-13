@@ -1,0 +1,12 @@
+INSERT INTO USER (USER_ID, USERNAME, PASSWORD, NICKNAME, ACTIVATED) VALUES (1, 'admin', 'vkfl4521', 'nickc', true);
+
+
+    insert into AUTHORITY (AUTHORITY_NAME)
+values ('ROLE_USER');
+insert into AUTHORITY (AUTHORITY_NAME)
+values ('ROLE_ADMIN');
+
+insert into USER_AUTHORITY (USER_ID, AUTHORITY_NAME)
+values (1, 'ROLE_USER');
+insert into USER_AUTHORITY (USER_ID, AUTHORITY_NAME)
+values (1, 'ROLE_ADMIN');
